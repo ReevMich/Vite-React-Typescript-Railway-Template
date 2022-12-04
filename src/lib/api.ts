@@ -2,7 +2,7 @@ import { isServer } from "solid-js/web";
 
 export function getStrapiURL(path = "") {
 	return `${
-    import.meta.env.PUBLIC_STRAPI_API_URL || "http://localhost:1337"
+    import.meta.env.VITE_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
   }${path}`
 }
 
